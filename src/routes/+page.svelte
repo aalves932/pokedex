@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    /** This is the MAIN page*/
+    import {pokemon} from "../stores/pokestore"
+    import PokemanCard from "../components/pokemanCard.svelte";
+</script>
+
+<svelte:head>
+    <title>Pokedex</title>
+</svelte:head>
+
+<h1 class="text-4xl text-center my-8">Svelte Kit Pokedex</h1>
+
+<div class="py-4 grid gap-4 md:grid-cols-3 grid-cols-1">
+    {#each $pokemon as pokeman}
+    <PokemanCard pokeman={pokeman}/>
+    {/each}
+</div>

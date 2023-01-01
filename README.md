@@ -2,6 +2,14 @@
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
+## Notes for this project
+    You must install tailwindcss using the cli as follow:
+> npm install -D tailwindcss postcss autoprefixer
+
+> npx tailwindcss init tailwind.config.cjs -p
+
+Source: (https://tailwindcss.com/docs/guides/sveltekit)
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
