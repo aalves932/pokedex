@@ -10,6 +10,8 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 
 Source: (https://tailwindcss.com/docs/guides/sveltekit)
 
+Documentation for PokeAPI: (https://pokeapi.co/docs/v2#info)
+
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
