@@ -1,16 +1,10 @@
-<script context="module">
-    export async function load({page}){
-        const id = page.params.id
-        const url = `https://pokeapi.co/api/v2/pokemon/${id}`
-        console.log('me ajuda');
-        const res = await fetch(url)
-        const pokeman = await res.json()
-        return {props: {pokeman}}
-    }
-</script>
-
 <script>
-    export let pokeman
+    export let data
+    const type = data.pokeman.types[0].type.name
 </script>
 
-<h1>o escolhido foi</h1>
+<div class=" flex flex-col items-center">
+    <h1 class=" text-4xl text-center my-8 uppercase">{data.pokeman.name}</h1>
+    <p>Type: <strong>{type}</strong> | Height: <strong>{data.pokeman.height}</strong> | Weight: <strong>{data.pokeman.weight}</strong></p>
+    <img class=" card-image" src={data.pokeman.sprites['front_default']} alt="{data.pokeman.name}}">
+</div>
