@@ -1,5 +1,8 @@
 <script>
-    export let data
+    /**
+	 * @type {{ pokeman: { types: { type: { name: any; }; }[]; name: any; height: any; weight: any; sprites: { [x: string]: any; }; }; }}
+	 */
+     export let data
     const type = data.pokeman.types[0].type.name
 </script>
 
