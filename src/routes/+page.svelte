@@ -1,9 +1,12 @@
 <script>
+// @ts-nocheck
+
     /** This is the MAIN page*/
     import {pokemon} from "../stores/pokestore"
     import PokemanCard from "../components/pokemanCard.svelte";
 
     let searchTerm = ""
+    // @ts-ignore
     let filteredPokemon = []
 
     $: {
