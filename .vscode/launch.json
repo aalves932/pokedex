@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "type": "vscode-edge-devtools.debug",
@@ -18,9 +19,16 @@
         },
         {
             "type": "node-terminal",
-            "name": "Run Script: dev",
+            "name": "npm run dev",
             "request": "launch",
             "command": "npm run dev -- --host",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "npm build",
+            "request": "launch",
+            "command": "npm run build",
             "cwd": "${workspaceFolder}"
         }
     ]
