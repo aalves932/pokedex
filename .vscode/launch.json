@@ -1,14 +1,14 @@
 {
     "version": "0.2.0",
     "configurations": [
-
-    {
-        "type": "vscode-edge-devtools.debug",
-        "request": "launch",
-        "name": "Launch Edge & DevTools",
-        "url": "http://localhost:5173",
-        "webRoot": "${workspaceFolder}"
-    },
+        
+        {
+            "type": "vscode-edge-devtools.debug",
+            "request": "launch",
+            "name": "Launch Edge & DevTools",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}"
+        },
         {
             "type": "chrome",
             "request": "launch",
@@ -20,7 +20,7 @@
             "type": "node-terminal",
             "name": "Run Script: dev",
             "request": "launch",
-            "command": "npm run dev",
+            "command": "npm run dev -- --host",
             "cwd": "${workspaceFolder}"
         }
     ]
