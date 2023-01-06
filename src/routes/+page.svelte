@@ -30,7 +30,7 @@
 
 <input class="w-full rounded-md text-base p-4 border-gray-800" type="text" bind:value={searchTerm} placeholder="encontre seu pokemon">
 
-<div class="py-4 grid gap-4 md:grid-cols-3 grid-cols-1">
+<div class="py-4 grid gap-4 md:grid-cols-4 grid-cols-2">
     {#each filteredPokemon as pokeman}
     <PokemanCard pokeman={pokeman}/>
     {/each}
