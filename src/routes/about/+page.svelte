@@ -8,4 +8,7 @@
 </svelte:head>
 
 <h1 class="text-4xl text-center my-8">About</h1>
-<p>Pokedex é uma demo implementada com SvelteKit</p>
+<div class="text-center">
+    <p>Pokedex é uma aplicação que utiliza SvelteKit no front-end e Poke-API no backend.</p>
+    <p class=" text-2xl">Have fun !!!</p>
+</div>
