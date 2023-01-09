@@ -21,7 +21,7 @@
             "type": "node-terminal",
             "name": "npm run dev",
             "request": "launch",
-            "command": "npm run dev -- --host",
+            "command": "npm run dev -- --host --open",
             "cwd": "${workspaceFolder}"
         },
         {
